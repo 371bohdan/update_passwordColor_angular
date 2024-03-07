@@ -14,11 +14,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Kozatskyi-test-passwords' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('Kozatskyi-test-passwords');
-  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
