@@ -4,8 +4,14 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
+
+
+
+
 import { AppComponent } from './app.component';
-import { PasswordListComponent } from './password-list/password-list.component'; 
+import { PasswordListComponent } from './password-list/password-list.component';
+import { PasswordInputComponent } from './password-input/password-input.component';
+import { PasswordStrengthComponent } from './password-strength/password-strength.component';
 
 @NgModule({
   imports: [
@@ -13,12 +19,16 @@ import { PasswordListComponent } from './password-list/password-list.component';
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: PasswordListComponent },
+      { path: '', 
+      component: PasswordListComponent,
+    },
     ])
   ],
   declarations: [
     AppComponent,
     PasswordListComponent,
+    PasswordInputComponent,
+    PasswordStrengthComponent
   ],
   bootstrap: [
     AppComponent
